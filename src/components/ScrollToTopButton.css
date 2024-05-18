@@ -1,0 +1,41 @@
+/* ScrollToTopButton.css */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  /* Pointer cursor on hover */
+  display: flex;
+  /* Use flexbox for centering the content */
+  align-items: center;
+  /* Center content vertically */
+  justify-content: center;
+  /* Center content horizontally */
+  z-index: 1000;
+  /* Ensure it's above other content */
+  transition: background-color 0.3s, transform 0.3s;
+  /* Smooth transition for hover */
+}
+
+.scroll-to-top:hover {
+  background-color: #00796b;
+  /* Fully opaque on hover */
+  transform: scale(1.1);
+  /* Slightly larger on hover */
+}
+
+/* For reduced motion preferences, we remove the scale transform */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-to-top:hover {
+    transform: none;
+  }
+}

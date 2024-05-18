@@ -1,0 +1,95 @@
+/* Services.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.services-page {
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.services-intro {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.services-intro p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.service-section {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.service-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.service-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.service-section p {
+  line-height: 1.6;
+}
+
+.contact-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00796b;
+}
+
+.contact-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+  background-color: #005f56;
+}

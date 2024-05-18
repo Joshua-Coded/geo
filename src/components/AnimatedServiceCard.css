@@ -1,0 +1,42 @@
+/* src/components/AnimatedServiceCard.css */
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-image {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+}
+
+.service-content {
+  padding: 20px;
+}
+
+.service-content h3 {
+  margin-top: 0;
+  color: #005f73;
+}
+
+.service-content p {
+  color: #333;
+  font-size: 0.9rem;
+}
+
+.service-details {
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin-top: 10px;
+}

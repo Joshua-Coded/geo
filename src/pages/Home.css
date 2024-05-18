@@ -1,0 +1,231 @@
+/* Add to your existing CSS file */
+.projects {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.project-card {
+  background: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+  text-align: left;
+}
+
+.project-info h3 {
+  margin-top: 0;
+}
+
+.projects {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1rem;
+}
+
+.project-info h3 {
+  color: #005f73;
+  font-size: 1.2em;
+}
+
+
+.btn-more {
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 250px;
+}
+
+.btn-more:hover {
+  background-color: #004d40;
+  text-decoration: none;
+}
+
+.contact-us {
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.contact-options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #00796b;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-secondary {
+  background-color: #005f73;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-color: #004d40;
+  text-decoration: none;
+}
+
+.why-choose-us {
+  background: #fff;
+  /* or any color that fits the design */
+  text-align: center;
+  padding: 4rem 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 4rem 1rem;
+  border-radius: 8px;
+}
+
+.why-choose-us h2 {
+  color: #005f73;
+  margin-bottom: 1rem;
+}
+
+.why-choose-us p {
+  color: #333;
+  /* or any color that fits your text */
+  margin-bottom: 0;
+  font-size: 1rem;
+  /* Adjust the font size as needed */
+}
+
+.about-us {
+  background: #fff;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.about-us-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.btn-about-us,
+.btn-download {
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  /* Add space between buttons */
+  transition: background-color 0.3s ease;
+}
+
+.btn-about-us:hover,
+.btn-download:hover {
+  background-color: #004d40;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-options {
+    flex-direction: column;
+  }
+
+  .why-choose-us {
+    padding: 2rem 1rem;
+    margin: 2rem 1rem;
+  }
+
+  .about-us-content {
+    padding: 0 2rem;
+    /* Padding for text on smaller screens */
+  }
+
+  .btn-about-us,
+  .btn-download {
+    display: block;
+    /* Stack the buttons on very small screens */
+    width: 80%;
+    /* Give buttons more room on small screens */
+    margin: 10px auto;
+    /* Center buttons with automatic horizontal margins */
+  }
+
+  a.btn-secondary,
+  a.btn-primary {
+    display: block;
+    /* Stack the buttons on very small screens */
+    width: 50%;
+    /* Give buttons more room on small screens */
+    margin: 10px auto;
+    /* Center buttons with automatic horizontal margins */
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+}

@@ -1,0 +1,78 @@
+.services-section {
+  padding: 4rem 1rem;
+  background: #f9f9f9; /* A light background to distinguish the section */
+  text-align: center;
+}
+
+.services-section h2 {
+  color: #005f73; /* Consistent with the site's color scheme */
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.service-card {
+  text-decoration: none;
+  color: inherit;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: start;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.see-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more-button {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.see-more-button:hover {
+  background-color: #004d40;
+  text-decoration: none;
+}
+
+.services-intro {
+  margin: 0 auto 2rem; /* Centered with a margin on the bottom */
+  padding: 0 1rem; /* Padding on the sides for smaller screens */
+  max-width: 800px; /* Max width for readability */
+  color: #333; /* Text color */
+  font-size: 1rem; /* Adjust the font size as needed */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+
+@media screen and (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-intro {
+    padding: 0 2rem; /* More padding on the sides for smaller screens */
+    font-size: 0.9rem; /* Slightly smaller font size on smaller screens */
+  }
+  .service-card{
+    text-align: center;
+  }
+}

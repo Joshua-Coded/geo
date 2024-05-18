@@ -1,0 +1,82 @@
+/* Team.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.team {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.team h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.team p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member div {
+    text-align: center;
+}
+
+.team-member h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+.team-member p {
+    line-height: 1.6;
+}
+
+@media(min-width: 768px) {
+    .team-member {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .team-member img {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}

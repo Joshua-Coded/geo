@@ -1,0 +1,136 @@
+.navbar {
+  background-color: #004d40;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem 2rem;
+  /* gap: 550px; */
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: none;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  background: white;
+  height: 2px;
+  width: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  z-index: 1000;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #a5d6a7;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between !important;
+    /* gap: 100px; */
+  }
+
+  button {
+    margin-left: 100px;
+    height: 40px;
+    cursor: pointer;
+    width: 40px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    width: 40px;
+  }
+
+  .nav-toggle {
+    display: flex;
+    gap: 200px;
+    text-align: left;
+    align-content: left;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #004d40;
+    display: none;
+    padding: 1rem;
+  }
+
+  .nav-menu.visible {
+    display: flex;
+  }
+
+  .nav-menu li {
+    text-align: left;
+    margin: 10px 25px;
+  }
+
+  .nav-toggle {
+    position: relative;
+    z-index: 2000;
+  }
+
+  .nav-toggle.active .hamburger {
+    transform: rotate(135deg);
+  }
+
+  .nav-toggle.active .hamburger::before,
+  .nav-toggle.active .hamburger::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  .nav-toggle.active .hamburger::before {
+    opacity: 0;
+  }
+
+  .nav-menu {
+    transition: all 0.3s ease;
+    transform: translateY(-100%);
+  }
+
+  .nav-menu.visible {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,79 @@
+/* QualityHSE.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.quality-hse-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.quality-hse-container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quality-hse-container p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.6;
+}
+
+.quality-hse-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.quality-hse {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quality-hse:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.quality-hse img {
+    width: 100%;
+    height: auto;
+}
+
+.quality-hse-info {
+    padding: 20px;
+}
+
+.quality-hse-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.quality-hse-info p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+@media(min-width: 768px) {
+    .quality-hse-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(min-width: 1024px) {
+    .quality-hse-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
