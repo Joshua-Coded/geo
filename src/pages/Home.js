@@ -11,6 +11,16 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import "./Home.css";
 
 const HomePage = () => {
+  const navigateToServicePage = () => {
+    // This causes a full page reload to the services page
+    window.location.href = '/about-us';
+  };
+
+  const navigateToProjectPage = () => {
+    // This causes a full page reload to the services page
+    window.location.href = '/projects';
+  };
+
   return (
     <main className="home">
       <HeroSection />
@@ -30,9 +40,12 @@ const HomePage = () => {
             contributes to projects that have a lasting positive impact on
             society and the environment.
           </p>
-          <Link to="/about-us" className="btn-about-us">
+
+
+          <Link onClick={navigateToServicePage} to="/about-us" className="btn-about-us">
             Learn More About Us
           </Link>
+
           <a href={BusinessProfilePDF} className="btn-download" download>
             Download Company Profile
           </a>
@@ -97,8 +110,8 @@ const HomePage = () => {
             </div>
           </div>
           <div className="btn-group">
-            <Link to="/projects" className="btn-more">
-              Learn More
+            <Link onClick={navigateToProjectPage} to="/projects" className="btn-more">
+              More Projects
             </Link>
           </div>
         </div>

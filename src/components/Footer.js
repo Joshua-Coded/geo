@@ -5,7 +5,7 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faTwitter,
+  faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -34,7 +34,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="icon twitter-icon"
           >
-            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
           <a
             href="https://www.linkedin.com"
@@ -45,6 +45,7 @@ function Footer() {
             <FontAwesomeIcon icon={faLinkedinIn} />
           </a>
         </div>
+        <p>Powered by Alivat Digitals</p>
       </div>
     </footer>
   );

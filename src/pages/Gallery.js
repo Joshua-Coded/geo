@@ -81,15 +81,15 @@ const Gallery = () => {
     <>
       <div className="gallery-container">
         <h1>Our Projects Gallery</h1>
-        <p>Explore the depth and breadth of Geogreatotechnics & Geodreels Ltd's expertise through our project gallery. Each image represents a story of challenge, innovation, and success, embodying our commitment to excellence in geotechnical, environmental, and geophysical solutions across West Africa.</p>
+        <p>Explore the depth and breadth of Geogreatotechnics & Geodreels Ltd's expertise through our project gallery. <br /><br />Each image represents a story of challenge, innovation, and success, embodying our commitment to excellence in geotechnical, environmental, and geophysical solutions across West Africa.</p>
         <div className="photo-grid">
           {images.map((image) => (
             <div key={image.id} className="photo">
               <img src={image.src} alt={image.title} />
               <div className="photo-info">
                 <h2>{image.title}</h2>
-                <p><strong>Overview:</strong> {image.overview}</p>
-                <p><strong>Description:</strong> {image.description}</p>
+                <p><br /><strong style={{ textAlign: "left" }}>Overview:</strong><br /> {image.overview}</p>
+                <p><br /><strong>Description:</strong><br /> {image.description}</p>
               </div>
             </div>
           ))}

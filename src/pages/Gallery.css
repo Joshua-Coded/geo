@@ -6,6 +6,15 @@
     font-family: Arial, sans-serif;
 }
 
+.gallery-container h1 {
+    color: #00796b;
+    text-align: center;
+}
+
+.gallery-container p {
+    text-align: center;
+}
+
 .photo-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -37,6 +46,7 @@
 .photo-info h2 {
     margin: 10px 0;
     font-size: 1.2em;
+
 }
 
 .photo-info p {
@@ -99,6 +109,12 @@
 
     .photo-info h2 {
         font-size: 1em;
+        color: #00796b;
+        text-align: center;
+    }
+
+    .photo-info p {
+        text-align: center;
     }
 
     .add-image-form {

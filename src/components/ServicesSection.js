@@ -54,9 +54,9 @@ const ServicesSection = () => {
         ))}
       </div>
       <div className="see-more-container">
-        <Link to="/services" className="see-more-button">
+        {/* <Link to="/services" className="see-more-button">
           Explore All Services
-        </Link>
+        </Link> */}
       </div>
     </section>
   );

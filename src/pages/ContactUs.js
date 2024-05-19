@@ -9,6 +9,7 @@ import {
   faLinkedin,
   faFacebookF,
   faTwitter,
+  faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 import "./ContactUs.css";
 import ScrollToTopButton from "../components/ScrollToTopButton";
@@ -44,7 +45,9 @@ function ContactUs() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(formData);
+    const { name, email, subject, message } = formData;
+    const mailtoLink = `mailto:alaerejones@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+    window.location.href = mailtoLink;
     setFormData({
       name: "",
       email: "",
@@ -61,7 +64,7 @@ function ContactUs() {
           <p>
             At Geogreatotechnics & Geodreels Ltd (GGL), we're dedicated to
             building strong relationships with our clients, partners, and the
-            communities we serve. Whether you’re looking for solutions in
+            communities we serve. <br /><br />Whether you’re looking for solutions in
             geotechnical, geophysical, environmental services, or have questions
             about our projects and services, our team is ready to provide the
             support and information you need.
@@ -96,7 +99,7 @@ function ContactUs() {
 
           <ContactDetail
             icon={faMapMarkerAlt}
-            detail="4 Daba Avenue, Off Airforce Road, Eliozu, Port Harcourt"
+            detail="Suite 21, Cherry Plaza, Behind Eternal Filling Station, Utako, Abuja"
             href="https://maps.google.com/?q=Suite+21,+Cherry+Plaza,+Behind+Eternal+Filling+Station,+Utako,+Abuja"
           />
 
@@ -113,14 +116,14 @@ function ContactUs() {
             Follow us on our social media channels to stay updated on our latest
             projects, community involvement, and industry insights.
           </p>
-          <a href="https://www.linkedin.com/company/geogreatotechnics-geodreels-ltd">
+          <a href="https://www.linkedin.com/company/geogreatotechnics-geodreels-ltd" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://www.facebook.com/geogreatotechnics-geodreels-ltd">
+          <a href="https://www.facebook.com/geogreatotechnics-geodreels-ltd" target="_blank">
             <FontAwesomeIcon icon={faFacebookF} />
           </a>
-          <a href="https://twitter.com/GGL">
-            <FontAwesomeIcon icon={faTwitter} />
+          <a href="https://twitter.com/GGL" target="_blank">
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
         </section>
 
@@ -128,8 +131,8 @@ function ContactUs() {
           <h2>Contact Us</h2>
           <p>
             For general inquiries or to request a service quote, please fill out
-            our online form. Provide your name, contact information, and a brief
-            description of your inquiry or project. A GGL representative will get
+            our online form. <br /><br /> Provide your name, contact information, and a brief
+            description of your inquiry or project. <br /> <br />A GGL representative will get
             back to you as soon as possible.
           </p>
           <form onSubmit={handleSubmit}>
@@ -171,7 +174,7 @@ function ContactUs() {
         <section className="maps-directions">
           <h2>Visit Us</h2>
           <p>
-            Our doors are always open if you wish to visit any of our offices.
+            Our doors are always open if you wish to visit any of our offices. <br /><br />
             Please call ahead to schedule an appointment, ensuring we can provide
             you with the best possible service upon your arrival.
           </p>
@@ -180,9 +183,9 @@ function ContactUs() {
         <section className="feedback-section">
           <h2>Feedback</h2>
           <p>
-            Your feedback is invaluable to us. If you have any comments,
+            Your feedback is invaluable to us. <br /><br />If you have any comments,
             suggestions, or concerns regarding our services or projects, please
-            let us know through any of the contact methods listed above. We are
+            let us know through any of the contact methods listed above.<br /><br /> We are
             committed to continuous improvement and serving your needs to the best
             of our ability.
           </p>

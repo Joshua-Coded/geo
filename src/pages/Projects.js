@@ -76,7 +76,7 @@ const Projects = () => {
   return (
     <>
       <div className="projects-container">
-        <h1>Demonstrating Excellence: Our Portfolio - Geogreatotechnics & Geodreels Ltd</h1>
+        <h1>Demonstrating Excellence <br />  - Our Portfolio -</h1>
         <p>Geogreatotechnics & Geodreels Ltd (GGL) has a proud history of executing over sixty ambitious projects across the West African Subregion, showcasing our unparalleled expertise in geotechnical, geophysical, environmental services, and beyond. Our portfolio reflects our commitment to excellence, innovation, and sustainability, underlining our role as a key player in advancing infrastructure, energy, and environmental projects. Here is a glimpse into some of our transformative projects:</p>
         <div className="projects-grid">
           {projects.map((project) => (
@@ -84,9 +84,13 @@ const Projects = () => {
               <img src={project.src} alt={project.title} />
               <div className="project-info">
                 <h2>{project.title}</h2>
-                <p><strong>Client:</strong> {project.client}</p>
-                <p><strong>Overview:</strong> {project.overview}</p>
-                <p><strong>Impact:</strong> {project.impact}</p>
+                <p>
+                  <br />
+                  <strong>Client:</strong>
+                  <br /> {project.client}</p>
+                <p>
+                  <br /><strong>Overview:</strong><br /> {project.overview}</p>
+                <p><br /><strong>Impact:</strong><br /> {project.impact}</p>
                 {/* <button onClick={() => removeProject(project.id)}>Remove</button> */}
               </div>
             </div>

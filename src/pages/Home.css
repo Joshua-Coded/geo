@@ -44,6 +44,7 @@
   padding: 4rem 1rem;
   background: #f9f9f9;
   text-align: center;
+  margin-bottom: -150px;
 }
 
 .project-grid {
@@ -213,6 +214,13 @@
     /* Give buttons more room on small screens */
     margin: 10px auto;
     /* Center buttons with automatic horizontal margins */
+  }
+
+  .btn-more {
+    width: 100px;
+    text-align: center;
+    align-items: center;
+    margin-right: 5px;
   }
 
   a.btn-secondary,

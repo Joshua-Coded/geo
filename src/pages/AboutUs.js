@@ -20,6 +20,15 @@ const ContactDetail = ({ icon, detail, href }) => (
 );
 
 const AboutUs = () => {
+  const navigateToTeamPage = () => {
+    // This causes a full page reload to the services page
+    window.location.href = '/team';
+  };
+
+  const navigateToHSEPage = () => {
+    // This causes a full page reload to the services page
+    window.location.href = '/quality-hse';
+  };
   return (
     <>
       <div
@@ -76,7 +85,7 @@ const AboutUs = () => {
             of industry trends and technologies, ensuring that GGL remains a
             leader in providing cutting-edge solutions.
           </p>
-          <Link to="/team" className="btn-link">
+          <Link onClick={navigateToTeamPage} to="/team" className="btn-link">
             More About The Team
           </Link>
         </div>
@@ -105,8 +114,8 @@ const AboutUs = () => {
             our dedication to protecting the environment and ensuring the
             well-being of all stakeholders.
           </p>
-          <Link to="/hse-policy" className="btn-link">
-            Learn More About HSE Policy
+          <Link onClick={navigateToHSEPage} to="/quality-hse" className="btn-link">
+            GGL HSE Policy
           </Link>
         </div>
 

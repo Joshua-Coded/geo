@@ -36,15 +36,45 @@ const QualityHSE = () => {
   return (
     <>
       <div className="quality-hse-container">
-        <h1>Commitment to Excellence - Quality & HSE Standards at Geogreatotechnics & Geodreels Ltd</h1>
+        <h1 style={{ color: "#00796b", fontSize: "2em" }}>Commitment to Excellence <br />  Our Quality <br /> &<br /> HSE Standards </h1>
         <p>At Geogreatotechnics & Geodreels Ltd (GGL), our unwavering commitment to quality, health, safety, and environmental stewardship stands at the core of everything we do. Guided by international standards and best practices, we ensure that our projects not only meet but exceed the expectations of our clients, while safeguarding our people and the planet.</p>
+
+
+        <h1 style={{ color: "#00796b", fontSize: "2em" }}>HSE POLICY STATEMENT </h1>
+        <p>GEOGREATOTECHNICS AND GEODREELS LIMITED is committed to the provision of a safe and healthy work environment for all personnel and members of the public in all her operation and administration locations. <br /><br />
+
+          Safety is a priority and second to none in the process of project executions or operation and in respect of this <br /><br />
+
+          we take all the necessary procedures or steps required to curb or reduce the chances of injury, accident, or illness in any of our work site.<br /><br />
+
+
+          We ensure all conditions that involve instrumentation and control is primary.</p>
+
+        {/* policy */}
         <div className="quality-hse-grid">
+          <h1 style={{ color: "#00796b", fontSize: "2em" }}> Our HSE Policy Includes </h1>
+          <p>All standard priority shall be given to the Health, Safety and security of Employees, Contractors, and
+            Members of the public.</p>
+          <p>All materials and equipment shall be certified prior to usage.</p>
+          <p>Job hazard analysis (JHA) shall be done before commencement of work at all sites and note the potent risks associated with the job and infer control measures.</p>
+          <p>Achieve and maintain continuous improvement in HSE performance.<br /><br /> Safety and awareness training on recent advancement/information or technologies in HSE shall be imparvted among the staff and other workers.</p>
+          <p>We shall maintain professionalism and competence among our staff by motivating them to performing their duties in line with the policy, and review and develop new HSE practices and procedures.</p>
+          <p>Always have a cordial and harmonious relationship with host communities.</p>
+          <p>Our HSE policies shall consistently be implemented according to client’s standard, the relevant laws and regulations guiding the operations in the Federal Republic of Nigeria and other host nations.</p>
+        </div>
+
+
+
+
+        <div className="quality-hse-grid">
+          <h1 style={{ color: "#00796b", fontSize: "2em" }}> - Certifications - </h1>
           {hses.map((hse) => (
             <div key={hse.id} className="quality-hse">
+
               <img src={hse.src} alt={hse.title} />
               <div className="quality-hse-info">
-                <h2>{hse.title}</h2>
-                <p><strong>Overview:</strong> {hse.overview}</p>
+                <h2 style={{ color: "#00796b", textAlign: "center", fontSize: "1.2em" }}>{hse.title}</h2>
+                <p><strong style={{ textAlign: "left" }}>Overview:</strong> {hse.overview}</p>
                 <p><strong>Description:</strong> {hse.description}</p>
               </div>
             </div>

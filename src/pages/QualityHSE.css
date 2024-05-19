@@ -1,4 +1,3 @@
-/* QualityHSE.css */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body {
@@ -66,14 +65,28 @@ body {
     line-height: 1.5;
 }
 
-@media(min-width: 768px) {
-    .quality-hse-grid {
+/* @media(min-width: 768px) { */
+/* .quality-hse-grid {
         grid-template-columns: 1fr 1fr;
-    }
-}
+    } */
 
-@media(min-width: 1024px) {
-    .quality-hse-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+/* .quality-hse-container h1 {
+        font-size: 1.5rem !important;
+        text-align: center;
+        margin-bottom: 20px;
+        color: #00796b !important;
     }
-}
+
+    .quality-hse-container p {
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto 40px auto;
+        line-height: 1.6;
+    } */
+/* } */
+
+/* @media(min-width: 1024px) { */
+/* .quality-hse-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    } */
+/* } */
